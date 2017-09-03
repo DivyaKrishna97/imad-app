@@ -5,7 +5,7 @@ var app = express();
 app.use(morgan('combined'));
 var articleone = 
 {
-    title: 'articleone | Divya Krishna';
+    title: 'articleone | Divya Krishna'
     heading: 'articleone';
     date: ' sep 2,2017';
     content:`
