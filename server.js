@@ -3,10 +3,11 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
-var articleone = {
-    title: "article one | Divya Krishna"
-    heading: "articleone"
-    date: " sep 2,2017";
+var articleone = 
+{
+    title: 'articleone | Divya Krishna'
+    heading: 'articleone'
+    date: ' sep 2,2017'
     content:`
         <p>
             This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
