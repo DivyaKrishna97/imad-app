@@ -3,10 +3,10 @@ var morgan = require('morgan');
 var path = require('path');
 var app = express();
 app.use(morgan('combined'));
-var articleone = 
-{
-    title: 'articleone | Divya Krishna'
-    heading: 'articleone'
+var articleone = {
+};
+    title: 'articleone | Divya Krishna';
+    heading: 'articleone';
     date: ' sep 2,2017';
     content:`
         <p>
