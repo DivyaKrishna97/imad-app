@@ -23,23 +23,16 @@ function createTemplate(data) {
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
-    var htmlTemplate = "
+    
+    var htmlTemplate =`
+    
     <html>
     <head>
         <title>
            ${title}
         </title>
         <meta name="viexport" content="width-device-width , initial-scale=1 "/>
-        <style>
-            .container{
-                   max-width: 800px;
-                   margin: 0 auto;
-                   color: grey;
-                   font-family: sans-serif;
-                   padding-left: 20px;
-                   padding-right: 20px;
-            }
-        </style>
+       <link href="/ui/style.css" rel="stylesheet" />
     </head> 
     <body>
           <div class="container">
@@ -52,3 +45,13 @@ function createTemplate(data) {
           </h3>
           <div>
              ${date}
+          </div>
+          <div>
+             ${content}
+          </div>
+          </div>
+    </body>
+    </html>
+             `;
+return htmlTemplate;
+}
