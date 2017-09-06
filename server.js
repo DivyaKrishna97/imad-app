@@ -40,6 +40,7 @@ date: 'sep 12, 2017',
 
                 </p> `
 },
+};
 function createTemplate(data) {
     var title = data.title;
     var date = data.date;
@@ -97,9 +98,8 @@ res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 
 var port = 80;
 app.listen(port, function () {
-console.log(IMAD course app listening on port ${port}!);
+  console.log(`IMAD course app listening on port ${port}!`);
 });
-
 
 
 
