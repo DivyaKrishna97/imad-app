@@ -28,7 +28,7 @@ date: 'sep 2, 2017',
 content: `   <p>
                  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.  
                  </p>  `
-},
+}
 
 'a3': {
 title: 'Article three |Divya Krishna',
