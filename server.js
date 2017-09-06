@@ -40,9 +40,6 @@ date: 'sep 12, 2017',
 
                 </p> `
 },
-
-
-
 function createTemplate(data) {
     var title = data.title;
     var date = data.date;
@@ -73,7 +70,6 @@ ${content}
 </body>
 </html>`;
 return htmlTemplate;
-
 }
 
 app.get('/', function (req, res) {
