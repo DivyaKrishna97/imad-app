@@ -18,7 +18,7 @@ function exec(){
     console.log('EXECUTED');
 }
   //Make A Request
-  request.open('GET', 'http://lachireddyvani.imad.hasura-app.io/counter', true);
+  request.open('GET', 'http://lachireddyvani.imad.hasura-app.io/drawing/submitdrw?inputdrw='+inputdrw,true);
   request.send(null);
 };
 
