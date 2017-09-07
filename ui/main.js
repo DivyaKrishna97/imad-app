@@ -1,11 +1,4 @@
-//counter code
-
-var button = document.getElementById('conter');
-
-
-button.onclick = function() {
-    
-   function exec(){
+function exec(){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() 
     {
@@ -20,8 +13,7 @@ button.onclick = function() {
                 } 
           } 
     }; 
-    request.open("GET", "http://lachireddyvani.imad.hasura-app.io/", true);
+    request.open("GET", "http://vihar1998x.imad.hasura-app.io/counter", true);
     request.send(); 
     console.log('EXECUTED');
 }
-};
