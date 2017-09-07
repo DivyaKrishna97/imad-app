@@ -15,5 +15,5 @@ function exec(){
     }; 
     request.open("GET", "http://lachireddyvani.imad.hasura-app.io/", true);
     request.send(); 
-    console.log('EXECUTED');
+    
 }
