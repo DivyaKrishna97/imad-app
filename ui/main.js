@@ -26,18 +26,14 @@ function exec(){
 var nameinput = document.getElementById("name");
 var name = nameInput.value;
 var submit = document.getElementById('submit_btn');
-submit.onclick = function() {
-    
-    //make a request to the server and send the name
-    
-    //capture a list of names and render it to the list
-    
-    var names = ['name1', 'name2', 'name3', 'name4'];
-    var list = '';
-    for(var i=0; i<names.lenght; i++) {
-        list +='<li>' + names[i] + '<li>';
-    }
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
+submit.onClick = function ()
+{
+  var names = [ "name1", "name2", "name3", "name4"];
+  var list = "";
+  for(var i=0; i<name.length; i++) //Here It Should Be 'names.length', Not 'name'
+  {
+    list += "<li>" + names[i] + "</li>";
+  }
+  var ul = document.getElementById("namelist");
+  ul.innerHTML = list;
 };
- 
