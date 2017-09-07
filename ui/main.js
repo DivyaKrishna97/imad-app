@@ -21,6 +21,6 @@ button.oncLick = function() {
       
   };
   //Make A Request
-  request.open('GET', 'http://lachireddyvani.imad.hasura-app.io/counter', true);
+  request.open('GET', 'http://kogam22.imad.hasura-app.io/counter', true);
   request.send(null);
 };
