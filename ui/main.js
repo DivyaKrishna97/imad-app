@@ -13,7 +13,7 @@ function exec(){
                 } 
           } 
     }; 
-    request.open("GET", "http://vihar1998x.imad.hasura-app.io/counter", true);
+    request.open("GET", "http://lachireddyvani.imad.hasura-app.io/counter", true);
     request.send(); 
     console.log('EXECUTED');
 }
