@@ -5,24 +5,23 @@ var button = document.getElementById('conter');
 
 button.onclick = function() {
     
-    //create a request object
+   function exec(){
     var request = new XMLHttpRequest();
-    
-    //capture the response and store it in a variable
-    
-    request.onereadstatechange = function() {
-        if(request.readystate --- XMLHttpRequest.DONE) {
-            
-            //Take some action
-            if(request.status === 200) {
-                var counter = request.responseText;
-                var span = document.getElementById('count');
-                span.innerHTML = counter.toString();
-            }
-        }
-        //not done yet
-    };
-    //make the request
-    request.open('GET','http://lachireddyvani.imad.hasura-app.io/counter',true);
-    request.send(null);
-    };
+    request.onreadystatechange = function() 
+    {
+          if (request.readyState === XMLHttpRequest.DONE) 
+          {
+              //Take Some Action
+              if (request.status === 200) 
+                { 
+                    var counter = request.responseText; 
+                    var span = document.getElementById('count');
+                    span.innerHTML = counter.toString();
+                } 
+          } 
+    }; 
+    request.open("GET", "http://lachireddyvani.imad.hasura-app.io/", true);
+    request.send(); 
+    console.log('EXECUTED');
+}
+};
