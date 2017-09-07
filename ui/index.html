@@ -1,34 +1,47 @@
 <!doctype html>
 <html>
     <head>
-        <link href="p6.css" rel="stylesheet" />
+        <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
     <div class="container">      
             <div class="center">
-                
+                <img id="madi" src="http://wallpaperget.com/images/anime-images-9.jpg" class="img-medium"/>
             </div>
             <hr/>
             <h3>Personal</h3>
             
             <div>
-                Hi,I'm Divya Krishna.
+                Hi There ! My Name Is Kogam22  :D . . . 
             </div>
             <hr/>
-            <h3>Profession</h3>
+            <h3>Professional</h3>
             <div>
-             I'm a Student.
+                I Don't Work At Hasura :P
             </div>
             <hr/>
             <div class="footer">
                 This Button <button id="counter">Click Me!</button> Has Been Clicked <span id="count">0</span> Times.
-            <hr/>
-            <input type="text" id="name" placeholder="name"></input>
-            <input type="submit" value="submit" id="submit_btn"></input>
-            <ul id = "namelist">
-            </ul>
-      </div>      
+            </div>
+            
     </div>   
-        <script src="p6.js"></script>
+        <script type="text/javascript" src="/ui/main.js"></script>
+        //This Below Script Was Added As Per Insrtuctions From @Vi_Con On IMAD Forums
+        <script>
+            console.log("JS Loaded")
+            var button = document.getElementById('counter')
+            var counter = 0;
+            
+             button.onclick = function() {
+              //make a request to counter endpoint
+               //capture the response and store it in a variable
+               //render the variable in correct span
+
+              counter = counter + 1;
+              var span = document.getElementById('count');
+              span.innerHTML = counter.toString();
+              };
+              console.log("Things went perfect");
+           </script>
     </body>
 </html>
