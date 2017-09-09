@@ -30,7 +30,7 @@ submit.onClick = function ()
 {
   var names = [ "name1", "name2", "name3", "name4"];
   var list = "";
-  for(var i=0; i<name.length; i++) //Here It Should Be 'names.length', Not 'name'
+  for(var i=0; i<names.length; i++) //Here It Should Be 'names.length', Not 'name'
   {
     list += "<li>" + names[i] + "</li>";
   }
